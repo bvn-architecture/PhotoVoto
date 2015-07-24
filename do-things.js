@@ -21,9 +21,8 @@ $(document).ready(function() {
       +"</svg>";
 
     var blankCandidateMarkup = "<li>" 
-    + "<table>" 
+    + "<img class='mugshot' src='%(mug)s'><table>" 
     + "  <tr>" 
-    + "    <td class='mugshot'><img src='%(mug)s'></td>" 
     + "    <td class='name'>%(name)s</td>" 
     + "    <td class='arrow up'  >"+arrows+"</td>" 
     + "    <td class='arrow down'>"+arrows+"</td>" 
@@ -44,7 +43,7 @@ $(document).ready(function() {
         "mug": "mugs/Twitter.png"
     });
     unrankedLine = unrankedLine.replace(/<li>/, "<li class='unranked-line'>");
-    $("#candidate-sortable li:eq(19)").after(unrankedLine);
+    $("#candidate-sortable li:eq(4)").after(unrankedLine);
 
     //ui controls
     $('.up').click(function() {

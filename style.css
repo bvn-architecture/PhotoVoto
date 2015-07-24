@@ -27,12 +27,10 @@
   }
   
   li {
-      background-color: aliceblue;
       margin-bottom: 3px;
       list-style-type: none;
-      height: 8vh;
+      height: 15vh;
       clear: both;
-      border-radius: 4vh;
   }
   li:first-child .up {
       visibility: hidden;
@@ -52,14 +50,24 @@
       background-color: red;
   }
   
-  li:nth-child(13):after {
+  /*li:nth-child(13):after {
       content: "above this line is your council of 13";
       text-align: center;
       display: block;
       height: 1.5em;
       border-top: 1px solid;
-  }
-  
+  }*/
+  img:hover {
+  transform: scale(3);
+  transition: all 0.4s;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+circle {
+  stroke: black;
+  stroke-width: 1px;
+  stroke-opacity: 0.1;
+}
   input {
       width: 90%;
   }
@@ -70,7 +78,7 @@
   
   .mugshot {
       display: inline-block;
-      width: 10vh;
+      width: 15vh;
       float: left;
   }
   
@@ -78,18 +86,17 @@
       width: 8vh;
       height: 8vh;
       object-fit: cover;
-      border-radius: 50%;
   }
   
-  .name {
-      width: 44vw;
-  }
+ .name {
+  display: none;
+}
   
   .arrow {
-      width: 10vw;
-      text-align: center;
-      font-size: 250%;
-  }
+  width: 7vw;
+  text-align: center;
+  font-size: 250%;
+}
   
   button.vote-button {
     width: 90%;
